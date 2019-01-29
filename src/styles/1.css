@@ -1,0 +1,37 @@
+.topic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 67px;
+}
+
+.topic__item {
+  line-height: 27px;
+  font-size: 16px;
+  opacity: 0.3;
+  width: 200px;
+  margin-right: 100px;
+}
+
+.topic__item:last-child {
+  margin-right: 0;
+}
+
+.desc-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 109px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.desc-block__item {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.desc-block__item:last-child {
+  margin-right: 0;
+}

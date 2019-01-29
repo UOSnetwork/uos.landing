@@ -1,0 +1,77 @@
+.solution__desc {
+  max-width: 600px;
+  margin: 10px 0 15px;
+}
+
+.solution__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.solution__block {
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.solution__item {
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.solution__item:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 12px;
+  width: 14px;
+  height: 1px;
+  background: #000;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.description__leftside {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.description__rightside {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description__img {
+  max-width: 300px;
+  margin-bottom: 33px;
+}
+
+.description__formula {
+  margin-bottom: 30px;
+}
+
+.btn-download {
+  width: 300px;
+  height: 64px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  color: #757575;
+  border-color: #757575;
+}
