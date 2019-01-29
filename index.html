@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>U°OS Network</title>
     <link rel="stylesheet" type="text/css" href="./src/styles.css">
+    <script src="./src/js/tabs.js"></script>
   </head>
   <body>
     <section class="bg-grey bg-grey_first">
@@ -95,8 +96,35 @@
       </div>
     </section>
 
-    <section>
-
+    <section class="bg-blue">
+      <div class="container">
+        <div class="tab quality">
+          <div class="tabs quality__titles">
+            <div onclick="openTab('Governance')" class="tab__links subtitle tab__links_active ">Governance</div>
+            <div onclick="openTab('Economy')" class="tab__links subtitle">Economy</div>
+            <div onclick="openTab('Reputation') "class="tab__links subtitle">Reputation</div>
+          </div>
+          <div id="Governance" class="tab__content tab__content_active quality__block">
+            <div class="tab__left">U°OS governance system allows any network participant with a non-zero importance° to influence the network and its development. The governance is carried out by means of electing delegates and direct voting for any initiatives, i.e. changes or innovations.</br></br>
+            U°OS protocol has a specific transaction type called upvote that allows increasing Importance° of other accounts without a direct transfer of tokens. It creates an opportunity for the recipient to get emission share in the future.</div>
+            <div class="tab__right"></div>
+          </div>
+          <div id="Economy" class="tab__content quality__block">
+            <div class="tab__left">U°OS economic model provides balanced value redistribution inside the network through adaptable token emission proportionally spread among participants according to their social and economic activity. This mechanism ensures balanced distribution, efficient protocol development and stimulates network growth.
+            UOS Token
+            U°OS economy functions within a distributed ledger protocol with use of UOS core token. Token ownership grants the right to utilize network bandwidth, CPU, RAM and prospectively storage. Staking tokens influences the account importance and as a result the governance ability and the right to emission share. Tokens have all functions of money, e.g they serve as a medium of exchange, a store of value, and as a unit of account.
+            Dynamic Emission
+            Economic efficiency requires certain level of liquidity which is provided by UOS token that tends to conserve its nominal value. The emission of token is dynamic and correlates with network development. The indicator called Network Importance (NI) describes the total volume of social and economic transactions among network participants and is used as a trigger for additional emission. The emission takes place every time NI reaches the all times maximum. The algorithm also considers average token velocity. Token exchange rate sustainability is supported by shortening/extension of unstacking period. Newly issued tokens are distributed among network participants according to their Importance° rate.
+            </div>
+            <div class="tab__right"></div>
+          </div>
+          <div id="Reputation" class="tab__content quality__block">
+            <div class="tab__left">Importance° can be used for rating the individual/organization’s activities and evaluate their   reputation️.   The DPoI-based peer-to-peer reputation system is implemented into U°OS protocol. Transparency of blockchain-recorded data allows tracing causal links, which increases trust to an individual/organization and decreases risk. NCDawareRank algorithm ranks information by relevance and tends to make botnet attacks economically impractical.  The reputation system provides trust among community/organization participants that drives an economic process due to reducing transactional and decision-making costs.
+            </div>
+            <div class="tab__right"></div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
