@@ -1,7 +1,7 @@
 .tab {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background: transparent;
 }
 
@@ -40,17 +40,23 @@
 
 .tab__content {
   display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tab__content_active {
   display: flex;
-  justify-content: space-between;
 }
 
 .tab__left {
   max-width: 600px;
+  margin-bottom: 20px;
 }
 
 .tab__right {
   max-width: 300px;
+  margin: 0 auto;
+}
+
+.tab__img {
 }

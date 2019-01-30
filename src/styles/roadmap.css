@@ -1,0 +1,12 @@
+.roadmap {
+}
+
+.roadmap__items {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.roadmap__titles {
+  display: flex;
+}

@@ -83,13 +83,13 @@
             <div class="description__leftside">
               <h3 class="subtitle subtitle_with-caption">Delegated Proof of Importance</h3>
               <p class="caption">You enrich the network, the network enriches you</p>
-              <div>Delegated-Proof-of-Importance (DPoI) consensus algorithm integrates the concepts of Delegated-Proof-of-Stake (DPoS) and Network Theory. The algorithm can calculate the network participant’s importance based on other participants’ evaluation. The algorithm considers and ranks their stake and incoming transaction activity, including both transfer and social activities.</br></br>
+              <div><p class="paragraph">Delegated-Proof-of-Importance (DPoI) consensus algorithm integrates the concepts of Delegated-Proof-of-Stake (DPoS) and Network Theory. The algorithm can calculate the network participant’s importance based on other participants’ evaluation. The algorithm considers and ranks their stake and incoming transaction activity, including both transfer and social activities.</p>
               Social and economic interaction of U°OS network participants is evaluated by others thus creating importance (i.e. reputation on the network). The interactions are expressed in transactions recorded in blocks of U°OS blockchain by block-producers. Block-producers are elected by U°OS network participants with non-zero importance. Calculator nodes. are dedicated to calculating transfer and social activity indices of every account on the U°OS network. Calculator nodes are community-owned and receive a regular emission of UOS tokens.</div>
             </div>
             <div class="description__rightside">
               <img src="./src/img/importance.png" class="description__img">
               <img src="./src/img/formula.svg" class="description__formula">
-              <a href="./src/doc/uos_yellow_paper.eng.pdf" target="_blank" class="btn-download">Download Yellow Paper</a>
+              <a href="./src/doc/uos_yellow_paper.eng.pdf" target="_blank" class="btn">Download Yellow Paper</a>
             </div>
           </div>
         </div>
@@ -98,30 +98,63 @@
 
     <section class="bg-blue">
       <div class="container">
-        <div class="tab quality">
-          <div class="tabs quality__titles">
-            <div onclick="openTab('Governance')" class="tab__links subtitle tab__links_active ">Governance</div>
+        <div class="tab">
+          <div class="tabs">
+            <div onclick="openTab('Governance')" class="tab__links tab__links_active subtitle">Governance</div>
             <div onclick="openTab('Economy')" class="tab__links subtitle">Economy</div>
             <div onclick="openTab('Reputation') "class="tab__links subtitle">Reputation</div>
           </div>
-          <div id="Governance" class="tab__content tab__content_active quality__block">
-            <div class="tab__left">U°OS governance system allows any network participant with a non-zero importance° to influence the network and its development. The governance is carried out by means of electing delegates and direct voting for any initiatives, i.e. changes or innovations.</br></br>
+          <div id="Governance" class="tab__content tab__content_active">
+            <div class="tab__left"><p class="paragraph">U°OS governance system allows any network participant with a non-zero importance° to influence the network and its development. The governance is carried out by means of electing delegates and direct voting for any initiatives, i.e. changes or innovations.</p>
             U°OS protocol has a specific transaction type called upvote that allows increasing Importance° of other accounts without a direct transfer of tokens. It creates an opportunity for the recipient to get emission share in the future.</div>
-            <div class="tab__right"></div>
+            <div class="tab__right"><img src="./src/img/faces_1.svg"></div>
           </div>
-          <div id="Economy" class="tab__content quality__block">
-            <div class="tab__left">U°OS economic model provides balanced value redistribution inside the network through adaptable token emission proportionally spread among participants according to their social and economic activity. This mechanism ensures balanced distribution, efficient protocol development and stimulates network growth.
-            UOS Token
-            U°OS economy functions within a distributed ledger protocol with use of UOS core token. Token ownership grants the right to utilize network bandwidth, CPU, RAM and prospectively storage. Staking tokens influences the account importance and as a result the governance ability and the right to emission share. Tokens have all functions of money, e.g they serve as a medium of exchange, a store of value, and as a unit of account.
-            Dynamic Emission
-            Economic efficiency requires certain level of liquidity which is provided by UOS token that tends to conserve its nominal value. The emission of token is dynamic and correlates with network development. The indicator called Network Importance (NI) describes the total volume of social and economic transactions among network participants and is used as a trigger for additional emission. The emission takes place every time NI reaches the all times maximum. The algorithm also considers average token velocity. Token exchange rate sustainability is supported by shortening/extension of unstacking period. Newly issued tokens are distributed among network participants according to their Importance° rate.
+          <div id="Economy" class="tab__content">
+            <div class="tab__left"><p class="paragraph">U°OS economic model provides balanced value redistribution inside the network through adaptable token emission proportionally spread among participants according to their social and economic activity. This mechanism ensures balanced distribution, efficient protocol development and stimulates network growth.</p>
+            <p class="paragraph"><b>UOS Token</b></p>
+            <p class="paragraph">U°OS economy functions within a distributed ledger protocol with use of UOS core token. Token ownership grants the right to utilize network bandwidth, CPU, RAM and prospectively storage. Staking tokens influences the account importance and as a result the governance ability and the right to emission share. Tokens have all functions of money, e.g they serve as a medium of exchange, a store of value, and as a unit of account.</p>
+            <p class="paragraph"><b>Dynamic Emission</b></p>
+            <p class="paragraph">Economic efficiency requires certain level of liquidity which is provided by UOS token that tends to conserve its nominal value. The emission of token is dynamic and correlates with network development. The indicator called Network Importance (NI) describes the total volume of social and economic transactions among network participants and is used as a trigger for additional emission. The emission takes place every time NI reaches the all times maximum. The algorithm also considers average token velocity. Token exchange rate sustainability is supported by shortening/extension of unstacking period. Newly issued tokens are distributed among network participants according to their Importance° rate.</p>
             </div>
-            <div class="tab__right"></div>
+            <div class="tab__right"><img src="./src/img/faces_2.svg"></div>
           </div>
-          <div id="Reputation" class="tab__content quality__block">
-            <div class="tab__left">Importance° can be used for rating the individual/organization’s activities and evaluate their   reputation️.   The DPoI-based peer-to-peer reputation system is implemented into U°OS protocol. Transparency of blockchain-recorded data allows tracing causal links, which increases trust to an individual/organization and decreases risk. NCDawareRank algorithm ranks information by relevance and tends to make botnet attacks economically impractical.  The reputation system provides trust among community/organization participants that drives an economic process due to reducing transactional and decision-making costs.
+          <div id="Reputation" class="tab__content">
+            <div class="tab__left">Importance° can be used for rating the individual/organization’s activities and evaluate their <div class="text_tooltip tooltip">reputation.<span class="tooltiptext"><div class="tooltiptitle">Reputation</div>Is the opinion about someone or something based on past behaviour or character.</span></div> The DPoI-based peer-to-peer reputation system is implemented into U°OS protocol. Transparency of blockchain-recorded data allows tracing causal links, which increases trust to an individual/organization and decreases risk. NCDawareRank algorithm ranks information by relevance and tends to make botnet attacks economically impractical.  The reputation system provides trust among community/organization participants that drives an economic process due to reducing transactional and decision-making costs.
             </div>
-            <div class="tab__right"></div>
+            <div class="tab__right"><img src="./src/img/faces_3.svg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner__block">
+          <div class="banner__leftside">
+            <div class="title_bold banner__title">U°Community</div>
+            <p class="text">Individuals carry out social and economic interactions online using their <b>digital identity</b> and <b>capital</b>. An individual’s <b>relevant connections and reputation</b></p>
+          </div>
+          <div class="banner__rightside">
+            <a href="https://u.community" target="_blank" class="btn">Join Community</a>
+          </div>
+          <img class="banner__cloud" src="./src/img/cloud_blue.svg">
+          <img class="banner__logo" src="./src/img/cloud_logo.svg">
+        </div>
+        <img class="banner__cloud_light" src="./src/img/cloud_blue_light.svg">
+      </div>
+    </section>
+
+    <section class="bg-white" style="margin-bottom: 100px;">
+      <div class="container">
+        <h2 class="title title_gray">Development Stages</h2>
+        <p class="caption caption_margin">As any young technology, blockchain passes certain development stages on the way towards mass adoption:</p>
+        <div class="roadmap">
+          <div class="roadmap__items">
+            <div class="caption_grey caption_active roadmap__item">1st Shift</div>
+            <div class="caption_grey roadmap__item">2nd Shift</div>
+            <div class="caption_grey roadmap__item">3rd Shift</div>
+          </div>
+          <div class="roadmap__titles">
+            <div class="subtitle roadmap__title">Fiat Money to Cryptocurrency</div>
+            <div class="subtitle roadmap__title"> to Blockchain Infrastructure</div>
+            <div class="subtitle roadmap__title"> to Blockchain Infrastructure to Mass Adoption</div>
           </div>
         </div>
       </div>
