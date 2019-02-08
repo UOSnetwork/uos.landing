@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 .bg-grey_first {
-  min-height: 100vh;
+  min-height: 600px;
   padding-top: 106px;
 }
 
@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 .bg-blue {
-  background: linear-gradient(0deg, rgba(216, 232, 232, 0.3) 0%, rgba(216, 232, 232, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(216, 232, 232, 0.3) 0%, rgba(216, 232, 232, 0) 100%);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -72,6 +72,13 @@ h1, h2, h3 {
   line-height: 53px;
   font-weight: 400;
   margin-bottom: 55px;
+}
+
+@media (max-width: 524px) {
+  .title {
+    font-size: 44px;
+    line-height: 52px;
+  }
 }
 
 .subtitle_grey {
@@ -168,7 +175,7 @@ h1, h2, h3 {
   font-family: 'Georgia', 'Montserrat', sans-serif;
 }
 
-.tooltip .tooltiptext::after {
+/* .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -177,7 +184,7 @@ h1, h2, h3 {
   border-width: 10px;
   border-style: solid;
   border-color: #505050 transparent transparent transparent;
-}
+} */
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -190,7 +197,8 @@ h1, h2, h3 {
 }
 
 .btn {
-  width: 300px;
+  max-width: 300px;
+  min-width: 260px;
   height: 64px;
   font-size: 16px;
   line-height: 23px;
@@ -207,4 +215,15 @@ h1, h2, h3 {
 .btn:hover {
   color: #757575;
   border-color: #757575;
+}
+
+.tippy-tooltip.tooltiptext-theme {
+  background: #505050;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 20px;
+  min-width: 300px;
+  text-align: left;
+  font-family: 'Georgia', 'Montserrat', sans-serif;
 }

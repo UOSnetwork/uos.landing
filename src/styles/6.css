@@ -25,7 +25,7 @@
 }
 
 .qa__answer {
-  max-width: 600px;
+  max-width: 620px;
   padding-left: 30px;
 }
 
@@ -60,4 +60,18 @@
 .qa__tw {
   background: url('../img/tw.svg') no-repeat;
   background-position: center;
+}
+
+.qa__tg_chat {
+  background: url('../img/tg_chat.svg') no-repeat;
+  width: 71px;
+  height: 33px;
+  margin-right: 25px;
+}
+
+.qa__tg_chanel {
+  background: url('../img/tg_chanel.svg') no-repeat;
+  width: 96px;
+  height: 33px;
+  margin-right: 25px;
 }

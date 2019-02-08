@@ -36,6 +36,7 @@
   max-width: 600px;
   position: relative;
   z-index: 4;
+  margin-bottom: 10px;
 }
 
 .banner__rightside {
