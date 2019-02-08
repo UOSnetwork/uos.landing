@@ -17,23 +17,23 @@ h1, h2, h3 {
   background: #F9F9F9;
   min-height: 800px;
   margin: 0;
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 .bg-grey_first {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 106px;
 }
 
 .bg-white {
   background: #fff;
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 .bg-blue {
   background: linear-gradient(0deg, rgba(216, 232, 232, 0.3) 0%, rgba(216, 232, 232, 0.3) 100%);
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -74,6 +74,10 @@ h1, h2, h3 {
   margin-bottom: 55px;
 }
 
+.subtitle_grey {
+  color: #E6E5E5;
+}
+
 .text_bold {
   font-weight: bold;
   line-height: 23px;
@@ -104,20 +108,30 @@ h1, h2, h3 {
   margin-bottom: 15px;
 }
 
+.caption_active {
+  color: #000;
+  font-size: 22px;
+  line-height: 32px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .caption_grey {
   font-size: 22px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.32);
   cursor: pointer;
-}
-
-.caption_active {
-  color: #000;
+  text-decoration: none;
 }
 
 .caption_margin {
   margin-bottom: 70px;
-  width: 800px;
+  max-width: 800px;
+}
+
+.caption_roadmap {
+  margin-bottom: 53px;
+  max-width: 600px;
 }
 
 .subtitle_with-caption {

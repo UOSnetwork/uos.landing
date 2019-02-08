@@ -1,0 +1,63 @@
+.qa {
+  margin-top: 35px;
+}
+
+.qa__block {
+  margin-bottom: 48px;
+}
+
+.qa__question {
+  margin-bottom: 5px;
+  position: relative;
+  margin-left: 30px;
+  line-height: 32px;
+  font-size: 22px;
+}
+
+.qa__question:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  width: 22px;
+  height: 1px;
+  background: #000;
+}
+
+.qa__answer {
+  max-width: 600px;
+  padding-left: 30px;
+}
+
+.qa__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.qa__icon {
+  width: 33px;
+  height: 33px;
+  margin-right: 25px;
+}
+
+.qa__site {
+  background: url('../img/logo.svg') no-repeat;
+  width: 183px;
+  height: 26px;
+  margin-right: 30px;
+}
+
+.qa__gh {
+  background: url('../img/gh.svg') no-repeat;
+}
+
+.qa__reddit {
+  background: url('../img/reddit.svg') no-repeat;
+}
+
+.qa__tw {
+  background: url('../img/tw.svg') no-repeat;
+  background-position: center;
+}

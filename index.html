@@ -11,7 +11,12 @@
     <meta name="theme-color" content="#ffffff">
     <title>U°OS Network</title>
     <link rel="stylesheet" type="text/css" href="./src/styles.css">
-    <script src="./src/js/tabs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./src/js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="./src/js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="./src/js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="./src/js/gsap/src/minified/TweenMax.min.js"></script>
+
   </head>
   <body>
     <section class="bg-grey bg-grey_first">
@@ -141,23 +146,228 @@
       </div>
     </section>
 
-    <section class="bg-white" style="margin-bottom: 100px;">
+    <section class="bg-white">
       <div class="container">
         <h2 class="title title_gray">Development Stages</h2>
-        <p class="caption caption_margin">As any young technology, blockchain passes certain development stages on the way towards mass adoption:</p>
-        <div class="roadmap">
-          <div class="roadmap__items">
-            <div class="caption_grey caption_active roadmap__item">1st Shift</div>
-            <div class="caption_grey roadmap__item">2nd Shift</div>
-            <div class="caption_grey roadmap__item">3rd Shift</div>
+        <p class="caption caption_roadmap">As any young technology, blockchain passes certain development stages on the way towards mass adoption.</br>
+        There are <b>three major paradigm shifts:</b></p>
+        <div class="stages">
+          <div class="stages__blocks">
+            <div class="stages__block">Fiat Money<br>to Cryptocurrency</div>
+            <div class="stages__block">Cryptocurrency<br>to Blockchain Infrastructure</div>
+            <div class="stages__block">Blockchain Infrastructure<br>to Mass Adoption</div>
           </div>
-          <div class="roadmap__titles">
-            <div class="subtitle roadmap__title">Fiat Money to Cryptocurrency</div>
-            <div class="subtitle roadmap__title"> to Blockchain Infrastructure</div>
-            <div class="subtitle roadmap__title"> to Blockchain Infrastructure to Mass Adoption</div>
+        </div>
+        <p class="paragraph timeline__desc">The challenge for U°OS is to build more scalable and sustainable infrastructure with an interface sufficiently easy-to-use for mass adoption. Any individual or organization from any economic system would use this infrastructure for interaction at minimal cost.</p>
+        <p class="paragraph timeline__desc">The only condition for network existence is the network growth. As Metcalfe’s law states, the value of the network is proportional to the square of the number of connected users of the system.</p>
+        <p class="paragraph timeline__desc stages__desc">U°OS provides a solution for various networked economic systems through the adaptable framework that contains the network growth factors at the algorithm level. Such a decentralized and self-adjusted environment has all the potential for acceleration of existing economic processes within networks.</p>
+
+        <h2 class="title title_gray">RoadMap</h2>
+        <div class="roadmap">
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q3 2017 – Q2 2018</div>
+            <div class="roadmap__item">DPoI research phase</div>
+            <div class="roadmap__item">Transaction activity index algorithm research</div>
+            <div class="roadmap__item">Dynamic emission/inflation algorithm research</div>
+            <div class="roadmap__item">Social layer representation on the blockchain research</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q3 2018</div>
+            <div class="roadmap__item">Social transaction type implementation</div>
+            <div class="roadmap__item">Importance algorithm research</div>
+            <div class="roadmap__item">Importance-based dynamic emission algorithm v2.0</div>
+            <div class="roadmap__item">Social activity index algorithm research</div>
+            <div class="roadmap__item">Activity calculator nodes</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q4 2018</div>
+            <div class="roadmap__item">Public code release</div>
+            <div class="roadmap__item">Importance algorithm implementation</div>
+            <div class="roadmap__item">Public testnet</div>
+            <div class="roadmap__item">Dynamic emission algorithm implementation</div>
+            <div class="roadmap__item">Importance voting for BPs</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q1 2019</div>
+            <div class="roadmap__item">Impovement Proposal system</div>
+            <div class="roadmap__item">Activity calculator node candidates</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q2 2019</div>
+            <div class="roadmap__item">Distributed trust/id system</div>
+            <div class="roadmap__item">EOSIO storage</div>
+            <div class="roadmap__item">U°OS Wallet</div>
+            <div class="roadmap__item">Browser extension</div>
+            <div class="roadmap__item">Native Apps</div>
+            <div class="roadmap__item">Block explorer</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q3 2019</div>
+            <div class="roadmap__item">DEX</div>
+            <div class="roadmap__item">Widgets</div>
+          </div>
+          <div class="roadmap__block">
+            <div class="roadmap__title">Q4 2019</div>
+            <div class="roadmap__item">Core token economic model update </div>
           </div>
         </div>
       </div>
-    </section>
+
+        <!-- <div class="roadmap">
+          <div class="roadmap__block" style="margin-top: 100px;">
+            <div class="roadmap__items">
+              <a href="#shift_1" class="caption_active roadmap__item_one">1st Shift</a>
+              <a href="#shift_2" class="caption_grey roadmap__item_two">2nd Shift</a>
+              <a href="#shift_3" class="caption_grey roadmap__item_three">3rd Shift</a>
+            </div>
+            <div class="roadmap__titles">
+              <div class="subtitle roadmap__title" id="title_1">Fiat Money to Cryptocurrency</div>
+              <div class="subtitle subtitle_grey roadmap__title" id="title_2"> Cryptocurrency to Blockchain Infrastructure</div>
+              <div class="subtitle subtitle_grey roadmap__title" id="title_3"> Blockchain Infrastructure to Mass Adoption</div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline__content">
+                <div class="paragraph timeline__content_bold">June 2017:</div>
+                <div>U°OS Start</div>
+              </div>
+              <div class="timeline__container" id="container">
+                <div class="timeline__lines">
+                  <div class="timeline__pre-line"></div>
+                  <div class="timeline__line"></div>
+                </div>
+                <div class="timeline__block">
+                  <div class="timeline__steps timeline__steps_first">
+                    <div class="timeline__step timeline__step_black" id="shift_1">Jan
+                        <div class="timeline__year">2009</div>
+                    </div>
+                    <div class="timeline__step">Feb</div>
+                    <div class="timeline__step_dashed"></div>
+                    <div class="timeline__step timeline__step_black">Jan
+                        <div class="timeline__year">2017</div>
+                    </div>
+                    <div class="timeline__step">Feb</div>
+                    <div class="timeline__step">Mar</div>
+                    <div class="timeline__step">Apr</div>
+                    <div class="timeline__step">May</div>
+                    <div class="timeline__step">Jun
+                      <div class="timeline__flag_wrapper">
+                          <div class="timeline__flag">1</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="trigger_1" class="timeline__steps timeline__steps_second">
+                    <div class="timeline__step" id="shift_2" data-px="4710">Jul</div>
+                    <div class="timeline__step">Aug</div>
+                    <div class="timeline__step">Sep</div>
+                    <div class="timeline__step">Oct</div>
+                    <div class="timeline__step">Nov</div>
+                    <div class="timeline__step">Dec</div>
+                    <div class="timeline__step timeline__step_black">Jan
+                        <div class="timeline__year">2018</div>
+                    </div>
+                    <div class="timeline__step">Feb</div>
+                    <div class="timeline__step">Mar</div>
+                    <div class="timeline__step">Apr</div>
+                    <div class="timeline__step">May</div>
+                    <div id="trigger_111"></div>
+                    <div class="timeline__step">Jun</div>
+                    <div class="timeline__step">Jul</div>
+                    <div class="timeline__step">Aug</div>
+                    <div class="timeline__step">Sep</div>
+                    <div class="timeline__step">Oct</div>
+                    <div class="timeline__step">Nov</div>
+                    <div class="timeline__step">Dec</div>
+                    <div class="timeline__step timeline__step_black">Jan
+                        <div class="timeline__year">2019</div>
+                    </div>
+                    <div class="timeline__step">Feb</div>
+                    <div class="timeline__step">Mar</div>
+                    <div class="timeline__step">Apr</div>
+                    <div class="timeline__step">May</div>
+                    <div class="timeline__step">Jun</div>
+                    <div class="timeline__step">Jul</div>
+                    <div class="timeline__step">Aug</div>
+                    <div class="timeline__step">Sep</div>
+                    <div class="timeline__step">Oct</div>
+                    <div class="timeline__step">Nov</div>
+                    <div class="timeline__step" id="shift_3">Dec
+                      <div class="timeline__flag_wrapper">
+                          <div class="timeline__flag">2</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="trigger_2" class="timeline__steps timeline__steps_third">
+                    <div class="timeline__step timeline__step_black">Jan
+                        <div class="timeline__year">2020</div>
+                    </div>
+                    <div class="timeline__step">Feb</div>
+                    <div class="timeline__step">Mar</div>
+                    <div class="timeline__step">Apr</div>
+                    <div class="timeline__step">May</div>
+                    <div class="timeline__step">Jun</div>
+                    <div class="timeline__step">Jul</div>
+                    <div class="timeline__step">Aug</div>
+                    <div class="timeline__step">Sep</div>
+                    <div class="timeline__step">Oct</div>
+                    <div class="timeline__step">Nov</div>
+                    <div class="timeline__step">Dec</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <p class="paragraph timeline__desc">The challenge for U°OS is to build more scalable and sustainable infrastructure with an interface sufficiently easy-to-use for mass adoption. Any individual or organization from any economic system would use this infrastructure for interaction at minimal cost.</p>
+          <p class="paragraph timeline__desc">U°OS provides a solution for various networked economic systems through the adaptable framework that contains the network growth factors at the algorithm level. Such a decentralized and self-adjusted environment has all the potential for acceleration of existing economic processes within networks.</p>
+        </div> -->
+      </section>
+
+      <section class="bg-grey">
+        <div class="container">
+          <h2 class="title title_gray">QA</h2>
+          <div class="qa">
+            <div class="qa__block">
+              <div class="qa__question">How can I try U°OS out?</div>
+              <div class="qa__answer">You can join U°Community, the U°OS-built social platform, where you can create some content, govern communities, interact with others, earn reputation and get the testnet UOS tokens’ emission.</div>
+            </div>
+            <div class="qa__block">
+              <div class="qa__question">What do I need to develop a dApp on U°OS blockchain?</div>
+              <div class="qa__answer">U°OS is open-source and free to use. You can either join the U°OS network or even deploy your own.</div>
+            </div>
+            <div class="qa__block">
+              <div class="qa__question">When is mainnet launch?</div>
+              <div class="qa__answer">No earlier Q2 2019</div>
+            </div>
+            <div class="qa__block">
+              <div class="qa__question">When is UOS tokens airdrop?</div>
+              <div class="qa__answer">No later mainnet launch</div>
+            </div>
+            <div class="qa__block">
+              <div class="qa__question">Where can I follow U°OS news and updates?</div>
+              <div class="qa__answer qa__links">
+                <a href="https://u.community/" class="qa__site"></a>
+                <a href="https://github.com/UOSnetwork" class="qa__icon qa__gh"></a>
+                <a href="https://www.reddit.com/r/uosnetwork/" class="qa__icon qa__reddit"></a>
+                <a href="https://twitter.com/uos_network" class="qa__icon qa__tw"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+    <!-- <script>
+      tippy.setDefaults({
+        animation: 'fade',
+        arrow: true,
+      })
+    </script> -->
+    </script>
+    <script src="./src/js/tabs.js"></script>
+    <!-- <script src="./src/js/timeline.js"></script> -->
   </body>
 </html>

@@ -2,6 +2,14 @@
   position: relative;
 }
 
+@media (max-width: 1264px) {
+  .banner__cloud_light,
+  .banner__cloud,
+  .banner__logo {
+    display: none;
+  }
+}
+
 .banner__block {
   max-width: 1200px;
   width: 100%;
@@ -16,6 +24,12 @@
   align-items: center;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 920px) {
+  .banner__block {
+    padding: 50px 23px 50px 30px;
+  }
 }
 
 .banner__leftside {
@@ -38,6 +52,7 @@
   left: 525px;
   z-index: 1;
   top: -60px;
+  overflow-x: hidden;
 }
 
 .banner__cloud {

@@ -1,0 +1,152 @@
+.timeline__container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 50px;
+}
+
+.timeline__lines {
+  display: flex;
+}
+
+.timeline__pre-line {
+  width: 140px;
+  background: linear-gradient(270deg, #C4C4C4 47.94%, rgba(196, 196, 196, 0) 102.81%);
+  height: 1px;
+  padding-right: 140px;
+}
+
+.timeline__line {
+  /* min-width: 3446px; */
+  min-width: 5000px;
+  height: 1px;
+  background: #C4C4C4;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.timeline__block {
+  display: flex;
+  height: 100px;
+}
+
+.timeline__steps {
+  display: flex;
+  /* border-right: 4px solid #000; */
+}
+
+.timeline__steps:last-child {
+  border-right: none;
+}
+
+.timeline__steps_first {
+  width: 570px;
+  margin-left: 140px;
+}
+
+.timelime_steps_second {
+  width: 1891px;
+}
+
+.timeline__steps_third {
+  /* width: 600px; */
+  width: 1800px;
+}
+
+.timeline__step {
+  min-width: 60px;
+  box-sizing: border-box;
+  height: 15px;
+  border-right: 1px solid #C4C4C4;
+  display: flex;
+  justify-content: center;
+  line-height: 17px;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  position: relative;
+}
+
+.timeline__year {
+  position: absolute;
+  font-size: 24px;
+  top: 35px;
+  left: 0px;
+}
+
+.timeline__step_black {
+  position: relative;
+}
+
+.timeline__step_black:before {
+  content: '';
+  position: absolute;
+  height: 25px;
+  border-left: 1px solid #000;
+  top: 0;
+  left: -1px;
+}
+
+.timeline__step_dashed {
+  width: 140px;
+  box-sizing: border-box;
+  border-top: 1px dashed #fff;
+  margin-top: -1px;
+  z-index: 2;
+}
+
+.timeline__desc {
+  max-width: 600px;
+}
+
+.timeline__flag_wrapper {
+  position: absolute;
+  top: -40px;
+  right: -1px;
+  height: 40px;
+  border-right: 1px solid #C4C4C4;
+}
+
+.timeline__flag {
+  padding-top: 3px;
+  padding-left: 10px;
+  width: 37px;
+  height: 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(196, 196, 196, .32);
+  color: #000;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.timeline__flag:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 11px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.timeline__content {
+  /* display: none; */
+  padding-left: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__content_active {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__content_bold {
+  font-weight: bold;
+}
