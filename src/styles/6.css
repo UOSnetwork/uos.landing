@@ -36,6 +36,10 @@
   margin-top: 30px;
 }
 
+.qa__links a {
+  margin-bottom: 20px;
+}
+
 .qa__icon {
   width: 33px;
   height: 33px;
