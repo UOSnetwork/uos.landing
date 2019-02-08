@@ -66,6 +66,10 @@
   background-position: center;
 }
 
+.qa__discord {
+  background: url('../img/.svg') no-repeat;
+}
+
 .qa__tg_chat {
   background: url('../img/tg_chat.svg') no-repeat;
   width: 71px;
