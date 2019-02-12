@@ -3,105 +3,83 @@ $(function () {
 
   $(document).on("click", "a[href^='#']", function(e) {
     let id = $(this).attr("href");
-    let px = $(this).attr("data-px");
-    console.log(px);
     if ($(id).length > 0) {
       e.preventDefault();
+      console.log($(id).selector);
 
-      controller1.scrollTo(scene1);
-      // controller1.scrollTo(1000);
+      if ($(id).selector === '#shift_1') {
+        controller1.scrollTo(0);
+      } else if ($(id).selector === '#shift_2') {
+        controller1.scrollTo(scene1);
+      } else if ($(id).selector === '#shift_3') {
+        controller1.scrollTo(scene2);
+      }
     }
   })
 
-  const scene1 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: 'onLeave', offset: -225, duration: 500 })
+  hideText = (id) => {
+    content = $(".timeline__content");
+    for (i = 0; i < content.length; i++) {
+      content[i].style.display = "none";
+      $(content[i]).removeClass("timeline__content_active");
+    }
+    $(id).addClass("timeline__content_active");
+  }
+
+  hideText("#content_1");
+
+
+  const scene1 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: 'onLeave', offset: -140,})
   .addIndicators()
-    .on('enter leave', () => {
-      // console.log('test');
-    })
-    // .triggerHook(-265);
-    // .setClassToggle('.roadmap__block', 'roadmap__block_1');
+  .setClassToggle('.roadmap__block', 'roadmap__block_2')
+  .on('leave', () => {
+    scene1.setClassToggle('.roadmap__block', 'roadmap__block_2');
+    // $("#title_1 span").addClass("subtitle");
+  })
+  // .on('progress leave', () => {
+  //   hideText('#content_2');
+  // })
 
-  // const scene2 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: "onLeave", duration: 1800})
-  //   .setClassToggle('.roadmap__block', 'roadmap__block_2');
+  // const scene1_1 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: 'onLeave ', offset: -140})
+  //   .on('progress', () => {
+  //     hideText('#content_2');
+  //   })
 
-  // const scene3 = new ScrollMagic.Scene({triggerElement: "#trigger_2", triggerHook: "onLeave", offset: -265, duration: 1111})
-  //   .setClassToggle('.roadmap__block', 'roadmap__block_3');
+  const scene2 = new ScrollMagic.Scene({triggerElement: "#trigger_2", triggerHook: "onLeave", offset: -140})
+  .addIndicators()
+  .removeClassToggle(false)
+  .setClassToggle('.roadmap__block', 'roadmap__block_3')
+  .on('leave', () => {
+    scene2.setClassToggle('.roadmap__block', 'roadmap__block_3');
+  })
+  // .on('progress leave', () => {
+  //   hideText('#content_3');
+  // })
 
-  // const scene4 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: "onLeave", offset: -265, duration: 1105 })
-  //   .on('enter leave', function (e) {
-  //     $(".timeline__content_bold").text("lol")}
-  //   );
+  // const scene2_1 = new ScrollMagic.Scene({triggerElement: "#trigger_2", triggerHook: 'onLeave ', offset: -140,})
+  //   .on('progress', () => {
+  //     hideText('#content_3');
+  //   })
 
-  //   const scene6 = new ScrollMagic.Scene({triggerElement: "#trigger_111", triggerHook: "onLeave", offset: -265, })
-  //   .on('enter leave', function (e) {
-  //     $(".timeline__content_bold").text("lolololololololololololol")}
-  //   );
+  // const scene2_1 = new ScrollMagic.Scene({triggerElement: "#trigger_1", triggerHook: 'onEnter', offset: -140, duration: 600})
+  //   .on('enter leave', () => {
+  //     hideText('#content_1');
+  //   })
 
-  // const scene5 = new ScrollMagic.Scene({triggerElement: "#trigger_2", triggerHook: "onLeave", offset: -265, })
-  // .on('enter leave', function (e) {
-  //   $(".timeline__content_bold").text("ne lol ne lol ne lol")}
-  // );
-
-
+  // const scene1_2 = new ScrollMagic.Scene({triggerElement: "#trigger_1-2", triggerHook: "onLeave", offset: -140})
+  // .addIndicators()
+  // .on('enter ', () => {
+  //   scene2.setClassToggle('.roadmap__block', 'roadmap__block_3');
+  // })
 
   controller1.addScene([
     scene1,
-    // scene2,
+    scene2,
+    // scene1_1,
+    // scene2_1,
     // scene3,
     // scene4,
     // scene5,
     // scene6,
   ]);
-
-
-
-  // var start = scene6.scrollOffset();
-  // var end = scene6.scrollOffset() + scene6.duration();
-  // console.log("the scene starts at", start, "and ends at", end);
-
-  // const scene4 = new ScrollMagic.Scene({triggerElement: "#trigger_1", offset: -265, duration: 1800}})
-  //   // .setTween(TweenMax.to("#container2 .animated", 0.5, {backgroundColor: "green"}))
-  //   // .setPin("#container2 .animated");
-  //   .setClassToggle('.roadmap__block', 'roadmap__block_3');
-// });
-
-        // const scene1 = new ScrollMagic.Scene({triggerElement: "#trigger_1",  duration: 540})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #shift_2", 0.5, {color: "rgba(0, 0, 0)"}))
-
-  //   const scene2 = new ScrollMagic.Scene({triggerElement: "#trigger_1",  duration: 540})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #shift_1", 0.5, {color: "rgba(0, 0, 0, 0.32)"}))
-
-  //   const scene3 = new ScrollMagic.Scene({triggerElement: "#trigger_1",  duration: 540})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #title_1", 0.5, {color: "#E6E5E5"}))
-
-  //   const scene4 = new ScrollMagic.Scene({triggerElement: "#trigger_1",  duration: 540})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #title_2", 0.5, {color: "rgba(0, 0, 0)"}))
-
-  //   const scene5 = new ScrollMagic.Scene({triggerElement: "#trigger_1",  duration: 540})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container .roadmap__titles", 0.5, {transform: "translateX(-260px)"}))
-
-  //   const scene6 = new ScrollMagic.Scene({triggerElement: "#trigger_2",  duration: 391})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #title_2", 0.5, {color: "#E6E5E5"}))
-
-  //   const scene7 = new ScrollMagic.Scene({triggerElement: "#trigger_2",  duration: 391})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container .roadmap__titles", 0.5, {transform: "translateX(-270px)"}))
-
-  //   const scene8 = new ScrollMagic.Scene({triggerElement: "#trigger_2",  duration: 391})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #title_3", 0.5, {color: "#000"}))
-
-  //   const scene9 = new ScrollMagic.Scene({triggerElement: "#trigger_2",  duration: 391})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #shift_3", 0.5, {color: "#000"}))
-
-  //   const scene10 = new ScrollMagic.Scene({triggerElement: "#trigger_2",  duration: 391})
-  //   .addTo(controller1)
-  //   .setTween(TweenMax.to("#container #shift_2", 0.5, {color: "rgba(0, 0, 0, 0.32)"}))
-});
+)});

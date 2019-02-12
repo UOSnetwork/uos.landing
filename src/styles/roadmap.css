@@ -1,119 +1,106 @@
-.stages__blocks {
-  display: flex;
-  margin-bottom: 53px;
-}
-
-.stages__block {
-  display: flex;
-  align-items: center;
-  height: 77px;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  font-weight: bold;
-  line-height: 20px;
-  font-size: 14px;
-  padding-left: 20px;
-  position: relative;
-  margin-right: 57px;
-}
-
-.stages__block:after {
-  content: '';
-  background: url('../img/arrow.svg') no-repeat;
-  position: absolute;
-  width: 25px;
-  height: 16px;
-  right: -30px;
-}
-
-
-@media (max-width: 920px) {
-  .stages__blocks {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .stages__block {
-    margin-bottom: 50px;
-  }
-
-  .stages__block:after {
-    right: 0;
-    bottom: -30px;
-    transform: rotate(90deg);
-    left: 88px;
-  }
-}
-
-.stages__block:first-child {
-  min-width: 204px;
-  max-width: 204px;
-  margin-left: -15px;
-}
-
-.stages__block:nth-child(2) {
-  max-width: 278px;
-  min-width: 278px;
-}
-
-.stages__block:nth-child(3) {
-  min-width: 259px;
-  max-width: 259px;
-}
-
-.stages__block:nth-child(3):after {
-  display: none;
-}
-
-.stages__desc {
-  margin-bottom: 76px;
-}
-
-@media (max-width: 920px) {
-  .stages__block:first-child {
-    margin-left: 0px;
-  }
-}
-
-
-
-
-.roadmap {
-  /* border-left: 1px solid #C4C4C4; */
-  margin-top: 55px;
-  margin-bottom: 140px;
-}
-
 .roadmap__block {
-  max-width: 600px;
-  margin-bottom: 60px;
-  margin-left: 10px;
+  position: relative;
 }
 
-.roadmap__block:last-child {
-  margin-bottom: 0;
+.roadmap__items {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  padding-left: 140px;
+}
+
+.roadmap__titles {
+  overflow-x: hidden;
+  margin-bottom: 150px;
+  white-space: nowrap;
+  padding-left: 140px;
 }
 
 .roadmap__title {
-  font-weight: normal;
-  line-height: 32px;
-  font-size: 22px;
-  margin-bottom: 10px;
+  display: inline;
 }
 
-.roadmap__item {
-  margin-bottom: 10px;
-  padding-left: 15px;
-  position: relative;
+.roadmap__titles_left {
+  left: 0;
 }
 
-.roadmap__item:before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #B5D2D2;
+.roadmap__title_left {
   position: absolute;
-  left: 0px;
-  top: 10px;
+  left: -30px;
+  color: #ccc;
+}
+
+.roadmap__item_grey {
+  color: rgba(0, 0, 0, .32);
+}
+
+.roadmap__item_black {
+  color: #000;
+}
+
+.roadmap__block_1 .roadmap__item_one {
+  color: #ccc;
+}
+
+.roadmap__block_2 .roadmap__item_two {
+  color: #000;
+}
+
+.roadmap__block_3 .roadmap__item_three {
+  color: #000;
+}
+
+.roadmap__block_2 .roadmap__item_one,
+.roadmap__block_3 .roadmap__item_one {
+  color: #ccc;
+}
+
+.roadmap__block_3 .roadmap__item_two {
+  color: #ccc;
+}
+
+.roadmap__block_1 .roadmap__titles {
+  margin-left: -300px;
+}
+
+.roadmap__block_2 .roadmap__titles {
+  /* margin-left: -540px; */
+  margin-left: -256px;
+}
+
+.roadmap__block_3 .roadmap__titles {
+  margin-left: -1340px;
+}
+
+.roadmap__block_1 #title_1,
+.roadmap__block_2 #title_2,
+.roadmap__block_3 #title_3 {
+  color: #000;
+}
+
+.roadmap__block_2 #title_2 {
+  margin-left: -283px;
+}
+
+.roadmap__block_1 #title_1.subtitle_color {
+  color: #ccc;
+}
+
+.roadmap__block_2 #title_1.subtitle_color {
+  color: #000;
+}
+
+/* .roadmap__block_1 #title_2,
+.roadmap__block_1 #title_3 {
+  color: #E6E5E5;
+}
+
+/* .roadmap__block_2 #title_3 { */
+.roadmap__block_2 #title_1 {
+  color: #E6E5E5;
+}
+
+.roadmap__block_3 #title_1,
+.roadmap__block_3 #title_2 {
+  color: #E6E5E5;
 }

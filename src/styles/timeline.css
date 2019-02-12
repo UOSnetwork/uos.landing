@@ -17,8 +17,8 @@
 }
 
 .timeline__line {
-  /* min-width: 3446px; */
-  min-width: 5000px;
+  min-width: 3446px;
+  /* min-width: 5000px; */
   height: 1px;
   background: #C4C4C4;
   overflow-y: hidden;
@@ -99,6 +99,10 @@
   max-width: 600px;
 }
 
+.timeline__desc:last-child {
+  margin-bottom: 60px;
+}
+
 .timeline__flag_wrapper {
   position: absolute;
   top: -40px;
@@ -136,14 +140,14 @@
 }
 
 .timeline__content {
-  /* display: none; */
-  padding-left: 225px;
-  display: flex;
+  display: none;
+  padding-left: 140px;
+  /* display: flex; */
   flex-direction: column;
 }
 
 .timeline__content_active {
-  display: flex;
+  display: flex!important;
   flex-direction: column;
 }
 
