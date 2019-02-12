@@ -1,4 +1,4 @@
-const openTab = (title, e = event) => {
+const openTab = (title, event) => {
   let i, content, link;
 
   content = document.getElementsByClassName("tab__content");
@@ -12,5 +12,5 @@ const openTab = (title, e = event) => {
   }
 
   document.getElementById(title).style.display = "flex";
-  e.currentTarget.className += " tab__links_active";
+  event.currentTarget.className += " tab__links_active";
 }
