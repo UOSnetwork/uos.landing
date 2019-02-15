@@ -10,10 +10,12 @@
     <title>U°OS Network</title>
     <link rel="stylesheet" type="text/css" href="./src/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./src/js/gsap/src/uncompressed/TweenMax.js"></script>
     <script src="./src/js/scrollmagic/minified/ScrollMagic.min.js"></script>
-    <script src="./src/js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script src="./src/js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
     <script src="./src/js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-    <script src="./src/js/gsap/src/minified/TweenMax.min.js"></script>
+    <!-- <script src="./src/js/scrollmagic/minified/plugins/animation.velocity.min.js"></script> -->
+    <script src="./src/js/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
 
   </head>
   <body>
@@ -158,28 +160,128 @@
           <div class="roadmap__block">
             <div class="roadmap__items">
               <a href="#shift_1" class="caption_active roadmap__item_one">1st Shift</a>
-              <a href="#shift_2" class="caption_grey roadmap__item_two">2nd Shift</a>
-              <a href="#shift_3" class="caption_grey roadmap__item_three">3rd Shift</a>
+              <a href="#shift_2" class="caption_grey caption_cursor roadmap__item_two">2nd Shift</a>
+              <a href="#shift_3" class="caption_grey caption_cursor roadmap__item_three">3rd Shift</a>
             </div>
             <div class="roadmap__titles">
-              <div class="subtitle roadmap__title" id="title_1">Fiat Money to <span class="subtitle_color">Cryptocurrency</span></div>
-              <div class="subtitle subtitle_grey roadmap__title" id="title_2">to Blockchain Infrastructure</div>
-              <div class="subtitle subtitle_grey roadmap__title" id="title_3"> Blockchain Infrastructure to Mass Adoption</div>
+              <div class="subtitle roadmap__title" id="title_1">Fiat Money to <span class="subtitle_color">Cryptocurrency </span></div>
+              <div class="subtitle subtitle_grey roadmap__title" id="title_2"> to<span class="subtitle_color"> Blockchain Infrastructure </span></div>
+              <div class="subtitle subtitle_grey roadmap__title" id="title_3"> to Mass Adoption</div>
             </div>
 
             <div class="timeline">
+              <div id="content_0" class="timeline__content">
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text caption_grey">U°OS History & RoadMap</div>
+                  </div>
+                </div>
+              </div>
               <div id="content_1" class="timeline__content">
                 <div class="paragraph timeline__content_bold">June 2017:</div>
-                <div class="timeline__text">U°OS Start</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">U°OS Start</div>
+                  </div>
+                </div>
               </div>
               <div id="content_2" class="timeline__content">
-                <div class="paragraph timeline__content_bold">2018:</div>
-                <div class="timeline__text">U°OS Now</div>
+                <div class="paragraph timeline__content_bold">Jun 2108:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">DPoI research phase</div>
+                    <div class="timeline__text">Transaction activity index algorithm research</div>
+                    <div class="timeline__text">Dynamic emission/inflation algorithm research</div>
+                  </div>
+                  <div class="timeline__column">
+                    <div class="timeline__text">Social layer representation on the blockchain research</div>
+                  </div>
+                </div>
               </div>
               <div id="content_3" class="timeline__content">
-                <div class="paragraph timeline__content_bold">2020:</div>
-                <div class="timeline__text">U°OS Future</div>
+                <div class="paragraph timeline__content_bold">Aug 2108:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Social transaction type implementation </div>
+                    <div class="timeline__text">Importance algorithm research</div>
+                    <div class="timeline__text">Importance-based dynamic emission algorithm v2.0</div>
+                  </div>
+                </div>
               </div>
+              <div id="content_4" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Oct 2108:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Social activity index algorithm research</div>
+                    <div class="timeline__text">Public code release</div>
+                    <div class="timeline__text">Activity calculator nodes</div>
+                  </div>
+                  <div class="timeline__column">
+                    <div class="timeline__text">Importance algorithm implementation</div>
+                  </div>
+                </div>
+              </div>
+              <div id="content_5" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Dec 2108:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Public testnet</div>
+                    <div class="timeline__text">Dynamic emission algorithm implementation</div>
+                    <div class="timeline__text">Importance voting for BPs</div>
+                  </div>
+                </div>
+              </div>
+              <div id="content_6" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Mar 2019:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Impovement Proposal system</div>
+                    <div class="timeline__text">Activity calculator node candidates</div>
+                  </div>
+                </div>
+              </div>
+              <div id="content_7" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Jun 2019:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Distributed trust/id system</div>
+                    <div class="timeline__text">EOSIO storage</div>
+                    <div class="timeline__text">U°OS Wallet</div>
+                  </div>
+                  <div class="timeline__column">
+                    <div class="timeline__text">Browser extension</div>
+                    <div class="timeline__text">Native Apps</div>
+                    <div class="timeline__text">Block explorer</div>
+                  </div>
+                </div>
+              </div>
+              <div id="content_8" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Sep 2019:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">DEX</div>
+                    <div class="timeline__text">Widgets</div>
+                  </div>
+               </div>
+              </div>
+              <div id="content_9" class="timeline__content">
+                <div class="paragraph timeline__content_bold">Dec 2019:</div>
+                <div class="timeline__columns">
+                  <div class="timeline__column">
+                    <div class="timeline__text">Core token economic model update</div>
+                    <div class="timeline__text">Mobile App</div>
+                  </div>
+               </div>
+              </div>
+              <div id="content_10" class="timeline__content">
+                  <div class="paragraph timeline__content_bold">The only condition for network existence is the network growth.</div>
+                  <div class="timeline__columns">
+                    <div class="timeline__column">
+                      <div class="timeline__text">As Metcalfe’s law states, the value of the network is proportional to the square of the number of connected users of the system.</div>
+                    </div>
+                 </div>
+                </div>
+
               <div class="timeline__container" id="container">
                 <div class="timeline__lines">
                   <div class="timeline__pre-line"></div>
@@ -201,7 +303,7 @@
                     <div class="timeline__step">May</div>
                     <div class="timeline__step">Jun
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">1</div>
+                        <a href="#flag_1" id="flag_1" class="timeline__flag">1</a>
                       </div>
                     </div>
                   </div>
@@ -223,55 +325,55 @@
                     <div></div>
                     <div class="timeline__step">Jun
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">4</div>
+                        <a href="#flag_2" id="flag_2" class="timeline__flag">4</a>
                       </div>
                     </div>
-                    <div id="trigger_1-1" class="timeline__step">Jul</div>
+                    <div class="timeline__step">Jul</div>
                     <div class="timeline__step">Aug
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">3</div>
+                        <a href="#flag_3" id="flag_3" class="timeline__flag">3</a>
                       </div>
                     </div>
-                    <div id="trigger_1-2" class="timeline__step">Sep</div>
+                    <div class="timeline__step">Sep</div>
                     <div class="timeline__step">Oct
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">4</div>
+                        <a href="#flag_4" id="flag_4" class="timeline__flag">4</a>
                       </div>
                     </div>
-                    <div id="trigger_1-3" class="timeline__step">Nov</div>
+                    <div class="timeline__step">Nov</div>
                     <div class="timeline__step">Dec
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">3</div>
+                        <a href="#flag_5" id="flag_5" class="timeline__flag">3</a>
                       </div>
                     </div>
-                    <div id="trigger_1-4" class="timeline__step timeline__step_black">Jan
+                    <div class="timeline__step timeline__step_black">Jan
                       <div class="timeline__year">2019</div>
                     </div>
                     <div class="timeline__step">Feb</div>
                     <div class="timeline__step">Mar
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">2</div>
+                        <a href="#flag_6" id="flag_6" class="timeline__flag">2</a>
                       </div>
                     </div>
-                    <div id="trigger_1-5" class="timeline__step">Apr</div>
+                    <div class="timeline__step">Apr</div>
                     <div class="timeline__step">May</div>
                     <div class="timeline__step">Jun
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">6</div>
+                        <a href="#flag_7" id="flag_7" class="timeline__flag">6</a>
                       </div>
                     </div>
-                    <div id="trigger_1-6" class="timeline__step">Jul</div>
+                    <div class="timeline__step">Jul</div>
                     <div class="timeline__step">Aug</div>
                     <div class="timeline__step">Sep
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">2</div>
+                        <a href="#flag_8" id="flag_8" class="timeline__flag">2</a>
                       </div>
                     </div>
-                    <div id="trigger_1-7" class="timeline__step">Oct</div>
+                    <div class="timeline__step">Oct</div>
                     <div class="timeline__step">Nov</div>
                     <div class="timeline__step" id="shift_3">Dec
                       <div class="timeline__flag_wrapper">
-                        <div class="timeline__flag">2</div>
+                        <a href="#flag_9" id="flag_9" class="timeline__flag">2</a>
                       </div>
                     </div>
                   </div>
@@ -282,7 +384,7 @@
                     </div>
                     <div class="timeline__step">Feb</div>
                     <div class="timeline__step">Mar</div>
-                    <div class="timeline__step">Apr</div>
+                    <div class="timeline__step" id="flag_10">Apr</div>
                     <div class="timeline__step">May</div>
                     <div class="timeline__step">Jun</div>
                     <div class="timeline__step">Jul</div>

@@ -2,7 +2,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   position: relative;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .timeline__lines {
@@ -17,8 +17,7 @@
 }
 
 .timeline__line {
-  min-width: 3446px;
-  /* min-width: 5000px; */
+  min-width: 3900px;
   height: 1px;
   background: #C4C4C4;
   overflow-y: hidden;
@@ -27,12 +26,11 @@
 
 .timeline__block {
   display: flex;
-  height: 100px;
+  height: 75px;
 }
 
 .timeline__steps {
   display: flex;
-  /* border-right: 4px solid #000; */
 }
 
 .timeline__steps:last-child {
@@ -49,7 +47,6 @@
 }
 
 .timeline__steps_third {
-  /* width: 600px; */
   width: 1800px;
 }
 
@@ -76,6 +73,11 @@
 
 .timeline__step_black {
   position: relative;
+}
+
+.timeline__step_red {
+  color: #FF0000;
+  transition: .3s;
 }
 
 .timeline__step_black:before {
@@ -112,6 +114,8 @@
 }
 
 .timeline__flag {
+  display: block;
+  text-decoration: none;
   padding-top: 3px;
   padding-left: 10px;
   width: 37px;
@@ -139,11 +143,17 @@
   border-bottom: 12px solid transparent;
 }
 
+.timeline__flag_red {
+  background: #FF0000;
+  transition: 1s;
+}
+
 .timeline__content {
   display: none;
   padding-left: 140px;
-  /* display: flex; */
   flex-direction: column;
+  justify-content: flex-end;
+  min-height: 210px;
 }
 
 .timeline__content_active {
@@ -153,4 +163,22 @@
 
 .timeline__content_bold {
   font-weight: bold;
+  line-height: 24px;
+}
+
+.timeline__columns {
+  display: flex;
+}
+
+.timeline__column {
+  margin-right: 50px;
+}
+
+.timeline__text {
+  line-height: 18px;
+  margin-bottom: 17px;
+}
+
+.timeline__text:last-child {
+  margin-bottom: 0;
 }

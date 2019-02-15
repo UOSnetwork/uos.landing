@@ -38,10 +38,28 @@ h1, h2, h3 {
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin-left :140px;
   display: flex;
   flex-direction: column;
   padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-left: 15px;
+  }
 }
 
 .version {
@@ -127,8 +145,11 @@ h1, h2, h3 {
   font-size: 22px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.32);
-  cursor: pointer;
   text-decoration: none;
+}
+
+.caption_cursor {
+  cursor: pointer;
 }
 
 .caption_margin {
