@@ -35,3 +35,7 @@
 .desc-block__item:last-child {
   margin-right: 0;
 }
+
+.desc-block  .features__block {
+  max-width: 400px;
+}
