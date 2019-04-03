@@ -20,6 +20,14 @@ h1, h2, h3 {
   padding-top: 60px;
 }
 
+.bg-grey.bg-grey_solution {
+  min-height: auto;
+}
+
+.bg-grey.bg-grey_solution .features {
+  margin-bottom: 75px;
+}
+
 .bg-grey_first {
   padding-top: 106px;
   min-height: 800px;
@@ -38,7 +46,7 @@ h1, h2, h3 {
 
 .bg-blue {
   background: linear-gradient(180deg, rgba(216, 232, 232, 0.3) 0%, rgba(216, 232, 232, 0) 100%);
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 
@@ -52,10 +60,18 @@ h1, h2, h3 {
 
 .version {
   opacity: 0.37;
-  margin-bottom: 87px;
+  margin-bottom: 105px;
 }
 
 .title {
+  font-size: 72px;
+  margin-bottom: 35px;
+  line-height: 72px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.title_main {
   font-size: 72px;
   margin-bottom: 35px;
   line-height: 72px;
@@ -67,19 +83,6 @@ h1, h2, h3 {
   opacity: 0.23;
 }
 
-.title_bold {
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 800;
-}
-
-.title_small {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 32px;
-  color: #000000;
-}
-
 .subtitle {
   font-size: 36px;
   line-height: 53px;
@@ -89,11 +92,10 @@ h1, h2, h3 {
   max-width: 700px;
 }
 
-@media (max-width: 524px) {
-  .title {
-    font-size: 44px;
-    line-height: 52px;
-  }
+.subtitle_bold {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 800;
 }
 
 .subtitle_grey {
@@ -105,10 +107,11 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
-.text_bold {
+.headline {
   font-weight: bold;
   line-height: 23px;
   font-size: 16px;
+  color: #000000;
 }
 
 .text {
@@ -122,6 +125,13 @@ h1, h2, h3 {
   width: 100%;
   height: 1px;
   margin: 10px 0 15px;
+}
+
+.line-break_short {
+  background: #000;
+  width: 72px;
+  height: 1px;
+  margin: 80px 0 20px;
 }
 
 .link {
@@ -267,7 +277,7 @@ h1, h2, h3 {
 .problem {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 260px;
+  margin-bottom: 100px;
 }
 
 @media(max-width: 500px) {
@@ -278,4 +288,55 @@ h1, h2, h3 {
 
 .problem_right-side {
   margin: 0 auto;
+}
+
+@media(max-width: 415px) {
+  .line-break_short {
+    margin: 25px 0 15px 0;
+  }
+
+  .caption {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .caption_tall:last-child {
+    margin-bottom: 80px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    font-size: 29px;
+    line-height: 42px;
+  }
+
+  .subtitle_fat {
+    margin-bottom: 0;
+  }
+
+  .bg-white, .bg-grey {
+    padding-top: 24px;
+    min-height: auto;
+  }
+
+  .bg-grey_first.bg-white {
+    padding-top: 50px;
+    min-height: auto;
+  }
+
+  .bg-white.bg-grey_scheme {
+    padding-top: 0;
+  }
+
+  .bg-blue {
+    padding-bottom: 0;
+  }
+
+  .btn_download {
+    margin-bottom: 80px;
+  }
 }

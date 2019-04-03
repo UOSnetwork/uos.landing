@@ -117,3 +117,10 @@
   left: 0px;
   top: 10px;
 }
+
+@media(max-width: 415px) {
+  .roadmap {
+    margin-bottom: 70px;
+    margin-top: 20px;
+  }
+}

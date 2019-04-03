@@ -1,5 +1,5 @@
 .solution {
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 
 .solution_pair {
@@ -7,8 +7,6 @@
   flex-wrap: wrap;
   padding-top: 50px;
   margin-bottom: 120px;
-  font-size: 22px;
-  line-height: 32px;
 }
 
 .solution_pair > .solution__block {
@@ -32,8 +30,57 @@
   object-fit: cover;
 }
 
-.solution__img_team {
+.solution__img_mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__img_block {
   margin-bottom: 150px;
+}
+
+.team__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description__img {
+  max-width: 300px;
+  margin-bottom: 33px;
+}
+
+@media(max-width: 415px) {
+  .solution {
+    padding-top: 30px;
+  }
+
+  .solution_pair {
+    margin-bottom: 40px;
+  }
+
+  .solution__img {
+    display: none;
+  }
+
+  .solution__img_mobile {
+    display: block;
+  }
+
+  .solution__img_block {
+    margin-right: -10px;
+  }
+
+  .team__img_block {
+    margin: 0 -10px 0 -10px;
+  }
+
+  .description__img {
+    margin-bottom: 0;
+  }
 }
 
 .solution__desc {
@@ -98,11 +145,6 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
-}
-
-.description__img {
-  max-width: 300px;
-  margin-bottom: 33px;
 }
 
 .description__formula {

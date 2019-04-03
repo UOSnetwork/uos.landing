@@ -20,8 +20,9 @@
     <section class="bg-grey bg-grey_first">
       <div class="container">
         <p class="version">Document v 0.2</p>
-        <h1 class="title">U°OS</h1>
-        <h3 class="subtitle">Blockchain Protocol Translating Social and Economic Actions into Reputation</h3>
+        <h1 class="title_main">U°OS</h1>
+        <p class="caption caption_tall">Blockchain Protocol Translating Social and Economic Actions into Reputation</p>
+        <div class="line-break_short"></div>
         <p class="caption caption_tall">Built to bring distributed, transparent and scalable reputation system to the web.</p>
         <!-- <div class="line-break"></div>
         <div class="topic">
@@ -42,42 +43,50 @@
         <div class="problem">
           <div class="problem_left-side">
             <div class="solution__desc_tall">Despite the global digitization, the bottleneck of the digital economy is in collecting and processing the information to make a decision that requires trust. People and organizations face the decision trilemma:</div>
-            <div class="title_small">Decision Trilemma:</div>
+            <div class="headline" style="margin-bottom: 10px;">Decision Trilemma:</div>
             <p class="caption_block">Assessment of entities to deal with can’t simultaneously be effortless, quick and comprehensive</p>
             <div class="solution__desc_tall">The U°OS reputation system scores digital entities based on the network’s feedback.
               <p>It enables people or businesses to make comprehensive one-touch decisions that require trust.</p></div>
           </div>
           <div class="problem_right-side">
-            <img src="./src/img/uos.png" class="description__img">
+            <img src="./src/img/trilemma.png" srcset="./src/img/trilemma2x.png 2x" class="description__img">
           </div>
         </div>
+      </div>
+    </section>
+    <section class="bg-grey bg-grey_solution">
+      <div class="container">
+        <h2 class="title title_gray">Solution</h2>
         <h3 class="subtitle">U°OS Reputation System is:</h3>
         <div class="features">
           <div class="features__block">
-            <div class="features__title">Distributed </div>
+            <div class="headline features__title">Distributed </div>
             <div>Operates algorithmically and does not belong to any centralized authority, which makes it censorship resistant.</div>
           </div>
           <div class="features__block">
-            <div class="features__title">Universal</div>
+            <div class="headline features__title">Universal</div>
             <div>Can be integrated into any other existing application via robust API and OAuth. It is open-source and sufficiently flexible to be adjusted to a specific context.</div>
           </div>
           <div class="features__block">
-            <div class="features__title">Transparent</div>
+            <div class="headline features__title">Transparent</div>
             <div>Transparency of blockchain-recorded data allows tracing causal links, which creates a holistic picture and increases trust to a digital entity (individual or organization).</div>
           </div>
           <div class="features__block">
-            <div class="features__title">Privacy-friendly</div>
+            <div class="headline features__title">Privacy-friendly</div>
             <div>Although all your activity on a blockchain is traceable, U°OS does not require you to reveal your identity in order to use the reputation system. You can either verify your account through various authorization methods or stay anonymous.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-grey bg-grey_scheme">
+    <section class="bg-white bg-grey_scheme">
       <div class="container">
         <div class="solution">
           <h2 class="title title_gray">How It Works</h2>
           <img src="./src/img/scheme.png" srcset="./src/img/scheme2x.png 2x" class="solution__img">
+          <div class="solution__img_block">
+            <img src="./src/img/scheme_mob.png" srcset="./src/img/scheme_mob2x.png 2x" class="solution__img_mobile">
+          </div>
         </div>
       </div>
     </section>
@@ -106,18 +115,18 @@
           </div>
           <div class="features features_small">
             <div class="features__block features__block_small">
-              <div class="features__title">Importance</div>
-              <div>DPoI calculates Importance of digital entities using not only their stake, but also their social and economic contribution to the network, that is reflected in incoming social or financial transactions from the other network participants. At the application layer, importance can be reflected as reputation, rating, score, etc.
+              <div class="headline features__title">Importance</div>
+              <div>Importance (and thus, influence) of a digital entity for a network is achieved by the value they produce for others along with the amount of their stake in the network. The value implies their social and economic contribution to the network, that is reflected in incoming social or financial transactions from the other network participants. At the application layer, importance can be reflected as reputation, rating, score, etc.
               </div>
             </div>
             <div class="features__block features__block_small">
-              <div class="features__title">Delegated Proof of Importance</div>
-              <div>DPoI consensus is achieved with the help of delegates. Delegates are elected by the network participants based on the Importance of each voter.
+              <div class="headline features__title">Delegated Proof of Importance</div>
+              <div>DPoI consensus algorithm integrates the concepts of EOSIO DPoS with the idea that social interactions naturally generate economic activity between individuals or organizations. Consensus is achieved with the help of delegates. Delegates are elected by the network participants based on the Importance of each voter. delegates. Delegates are elected by the network participants based on the Importance° of each voter.
               </div>
               <img src="./src/img/formula.svg" class="features__formula">
             </div>
             <div class="features__block features__block_small">
-              <div class="features__title">Social Transactions</div>
+              <div class="headline features__title">Social Transactions</div>
               <div>U°OS protocol has a specific transaction type called social. Social transactions allow the exchange of non-monetary value in a blockchain. For example, <a href="https://u.community" class="link" target="_blank">U°Community</a> dApp uses the social transactions to upvote, downvote, publish content and follow or trust users. Social transactions along with economic ones are used to calculate Importance of digital entities.
               </div>
             </div>
@@ -128,12 +137,12 @@
           <h3 class="subtitle">Economy</h3>
           <div class="desc-block">
               <div class="features__block features__block_small">
-                <div class="features__title">Dynamic Emission</div>
+                <div class="headline features__title">Dynamic Emission</div>
                 <div>Dynamic emission is introduced to provide additional liquidity during network growth. The indicator called Network Importance (NI) describes the total volume of social and economic transactions among network participants and is used as a trigger for additional emission. The emission takes place every time NI reaches its all-time maximum. Newly issued tokens are distributed among network participants according to their Importance rate.
                 </div>
               </div>
               <div class="features__block features__block_small">
-                <div class="features__title">UOS Token</div>
+                <div class="headline features__title">UOS Token</div>
                 <div class="solution__block">
                   <div class="solution__item_title">UOS token is used as a currency and to purchase network resources:</div>
                   <div class="solution__item">bandwidth </div>
@@ -178,7 +187,7 @@
       <div class="banner">
         <div class="banner__block">
           <div class="banner__leftside">
-            <div class="title_bold banner__title">U°Community</div>
+            <div class="subtitle_bold banner__title">U°Community</div>
             <p class="text">U°Community is the first dApp and a user-friendly interface for U°OS blockchain. It allows users to interact with each other, publish content and govern communities and organizations, powered by the U°OS reputation system. </p>
           </div>
           <div class="banner__rightside">
@@ -196,7 +205,9 @@
         <h2 class="title title_gray">Team</h2>
         <p class="caption caption_roadmap">As for 2019, the U°OS team consists of about 30 people including experienced developers, marketers, researchers, etc. You can get to know each of them better on the <a href="https://u.community/communities/4" class="link" target="_blank">U°Community website.</a>
        </p>
-       <img src="./src/img/team.png" srcset="./src/img/team2x.jpg 2x" class="solution__img solution__img_team">
+       <div class="team__img_block">
+         <img src="./src/img/team.png" srcset="./src/img/team2x.jpg 2x" class="team__img">
+        </div>
       </div>
     </section>
 
@@ -372,31 +383,31 @@
           <h2 class="title title_gray">QA</h2>
           <div class="qa">
             <div class="qa__block">
-              <div class="qa__question">What is U°OS global mission?</div>
+              <div class="headline qa__question">What is U°OS global mission?</div>
               <div class="qa__answer">Enable people to interact in the digital environment as sovereign individuals.</div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">What is U°OS vision?</div>
+              <div class="headline qa__question">What is U°OS vision?</div>
               <div class="qa__answer">Be the basis of the global economic space in which parties from different economic systems interact without intermediaries at minimal cost. </div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">How can I try U°OS out?</div>
+              <div class="headline qa__question">How can I try U°OS out?</div>
               <div class="qa__answer">You can join U°Community, the U°OS-built social platform, where you can create content, govern communities, interact with others, earn reputation and get the testnet UOS tokens’ emission.</div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">Can DPoI algorithm be used by other applications?</div>
+              <div class="headline qa__question">Can DPoI algorithm be used by other applications?</div>
               <div class="qa__answer">Yes, U°OS is open-source and free to use. As a developer, you can either join U°OS network or even deploy your own.</div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">When is mainnet launch?</div>
+              <div class="headline qa__question">When is mainnet launch?</div>
               <div class="qa__answer">No earlier than Q2 2019.</div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">When is UOS tokens airdrop?</div>
+              <div class="headline qa__question">When is UOS tokens airdrop?</div>
               <div class="qa__answer">No later than mainnet launch. The details will be announced later.</div>
             </div>
             <div class="qa__block">
-              <div class="qa__question">Where can I follow U°OS news and updates?</div>
+              <div class="headline qa__question">Where can I follow U°OS news and updates?</div>
               <div class="qa__answer qa__links">
                 <a href="https://u.community/communities/4" class="qa__site" target="_blank"></a>
                 <a href="https://github.com/UOSnetwork" class="qa__icon qa__gh" target="_blank"></a>

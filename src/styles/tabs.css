@@ -70,3 +70,13 @@
     max-width: 250px;
   }
 }
+
+@media(max-width: 415px) {
+  .tab {
+    margin-top: 30px;
+  }
+
+  .tab__left {
+    margin-bottom: 0;
+  }
+}
