@@ -29,8 +29,13 @@ h1, h2, h3 {
 }
 
 .bg-grey_first {
-  padding-top: 106px;
-  min-height: 800px;
+  padding-top: 40px;
+}
+
+.bg-grey_first.bg-grey {
+  max-height: 672px;
+  min-height: 672px;
+  height: 100%;
 }
 
 @media(max-width: 768px) {
@@ -274,6 +279,21 @@ h1, h2, h3 {
   font-family: 'Georgia', 'Montserrat', sans-serif;
 }
 
+.mass-media_title {
+  margin-top: 78px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.mass-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mass-media a {
+  margin-right: 30px;
+}
+
 .problem {
   display: flex;
   flex-wrap: wrap;
@@ -338,5 +358,12 @@ h1, h2, h3 {
 
   .btn_download {
     margin-bottom: 80px;
+  }
+}
+
+@media(max-width: 600px) {
+  .bg-grey_first.bg-grey {
+    min-height: 800px;
+    max-height: 800px;
   }
 }
