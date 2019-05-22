@@ -33,8 +33,8 @@ h1, h2, h3 {
 }
 
 .bg-grey_first.bg-grey {
-  max-height: 672px;
-  min-height: 672px;
+  max-height: 700px;
+  min-height: 700px;
   height: 100%;
 }
 
@@ -363,7 +363,7 @@ h1, h2, h3 {
 
 @media(max-width: 600px) {
   .bg-grey_first.bg-grey {
-    min-height: 800px;
-    max-height: 800px;
+    min-height: 900px;
+    max-height: 900px;
   }
 }
