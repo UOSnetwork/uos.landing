@@ -294,6 +294,10 @@ h1, h2, h3 {
   margin-right: 30px;
 }
 
+.mass-media img {
+  max-height: 31px;
+}
+
 .problem {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +367,7 @@ h1, h2, h3 {
 
 @media(max-width: 600px) {
   .bg-grey_first.bg-grey {
-    min-height: 900px;
-    max-height: 900px;
+    min-height: 1000px;
+    max-height: 1000px;
   }
 }
